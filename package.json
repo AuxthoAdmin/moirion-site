@@ -1,0 +1,11 @@
+{
+  "name": "moirion-site",
+  "version": "1.0.0",
+  "description": "Static product site for Moirion.",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
