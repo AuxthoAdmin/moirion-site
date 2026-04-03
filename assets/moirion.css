@@ -317,6 +317,13 @@ main section + section {
   gap: 1.2rem;
 }
 
+.proof-strip {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .feature-card,
 .scene-card,
 .signal-card,
@@ -324,6 +331,7 @@ main section + section {
 .bridge-card,
 .faq-item,
 .legal-card,
+.proof-card,
 .cta-band {
   border: 1px solid rgba(255, 255, 255, 0.055);
   border-radius: 1.6rem;
@@ -333,13 +341,15 @@ main section + section {
 
 .feature-card,
 .scene-card,
-.signal-card {
+.signal-card,
+.proof-card {
   padding: 1.45rem;
 }
 
 .feature-card h3,
 .scene-card h3,
 .signal-card h3,
+.proof-card h3,
 .faq-item summary,
 .download-panel h3,
 .legal-card h3,
@@ -352,12 +362,28 @@ main section + section {
 .feature-card p,
 .scene-card p,
 .signal-card p,
+.proof-card p,
 .download-panel p,
 .legal-card p,
 .bridge-card p {
   margin: 0.78rem 0 0;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.proof-card {
+  background: linear-gradient(180deg, rgba(255, 248, 236, 0.04), rgba(255, 255, 255, 0.02));
+}
+
+.proof-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  margin-bottom: 0.95rem;
 }
 
 .local-layout,
@@ -580,6 +606,7 @@ main section + section {
   }
 
   .card-grid,
+  .proof-strip,
   .steps,
   .site-footer-grid,
   .local-layout,
