@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Moirion logo mark dark</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="512" cy="512" r="336" stroke="#181C22" stroke-width="22"/>
+    <circle cx="512" cy="512" r="258" stroke="#55606A" stroke-width="12"/>
+    <line x1="512" y1="380" x2="512" y2="208" stroke="#181C22" stroke-width="18"/>
+    <line x1="605.34" y1="418.66" x2="727.67" y2="296.33" stroke="#181C22" stroke-width="18"/>
+    <line x1="644" y1="512" x2="816" y2="512" stroke="#181C22" stroke-width="18"/>
+    <line x1="605.34" y1="605.34" x2="727.67" y2="727.67" stroke="#181C22" stroke-width="18"/>
+    <line x1="512" y1="644" x2="512" y2="816" stroke="#181C22" stroke-width="18"/>
+    <line x1="418.66" y1="605.34" x2="296.33" y2="727.67" stroke="#181C22" stroke-width="18"/>
+    <line x1="380" y1="512" x2="208" y2="512" stroke="#181C22" stroke-width="18"/>
+    <line x1="418.66" y1="418.66" x2="296.33" y2="296.33" stroke="#181C22" stroke-width="18"/>
+  </g>
+  <circle cx="512" cy="512" r="162" fill="#1C2026" stroke="#181C22" stroke-width="12"/>
+  <circle cx="512" cy="512" r="132" stroke="rgba(24,28,34,0.08)" stroke-width="8"/>
+</svg>

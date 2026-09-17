@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Static product site for Moirion.",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify"
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify",
+    "build": "npm run build:css && node ./scripts/build-pages.mjs"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"

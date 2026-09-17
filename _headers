@@ -1,0 +1,25 @@
+/
+  Cache-Control: no-store, max-age=0
+  X-Moirion-Site-Release: 2026-09-17-cloudflare-single-source
+
+/index.html
+  Cache-Control: no-store, max-age=0
+  X-Moirion-Site-Release: 2026-09-17-cloudflare-single-source
+
+/privacy.html
+  Cache-Control: no-store, max-age=0
+  X-Moirion-Site-Release: 2026-09-17-cloudflare-single-source
+
+/terms.html
+  Cache-Control: no-store, max-age=0
+  X-Moirion-Site-Release: 2026-09-17-cloudflare-single-source
+
+/404.html
+  Cache-Control: no-store, max-age=0
+  X-Moirion-Site-Release: 2026-09-17-cloudflare-single-source
+
+https://moirion.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.moirion.pages.dev/*
+  X-Robots-Tag: noindex
