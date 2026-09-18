@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("./fonts/newsreader-variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("./fonts/manrope-variable.ttf") format("truetype");
+}
+
 :root {
   color-scheme: dark;
   --bg: #0d100f;
@@ -344,7 +360,7 @@ main section[id] {
 
 .section-lead {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   align-items: end;
   gap: clamp(2rem, 7vw, 6rem);
   margin-bottom: clamp(2.8rem, 6vw, 4.8rem);
@@ -362,10 +378,23 @@ main section[id] {
   max-width: 44rem;
   margin-top: 0.65rem;
   font-family: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  font-size: clamp(2.8rem, 5.6vw, 5.1rem);
+  font-size: clamp(2rem, calc(1.5rem + 3.3vw), 4.5rem);
   font-weight: 500;
   letter-spacing: -0.058em;
-  line-height: 0.98;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+p,
+figcaption,
+.point-row span,
+.status-card h3 {
+  text-wrap: pretty;
 }
 
 .section-intro-copy,
@@ -647,10 +676,10 @@ main section[id] {
   max-width: 38rem;
   margin-top: 0.65rem;
   font-family: "Newsreader", "Iowan Old Style", Georgia, serif;
-  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-size: clamp(2rem, calc(1.5rem + 3.3vw), 4.5rem);
   font-weight: 500;
   letter-spacing: -0.055em;
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 .download-panel > p:not(.eyebrow):not(.platform-meta) {
@@ -767,6 +796,14 @@ main section[id] {
   margin-top: 0.65rem;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.legal-shell h1 {
+  text-wrap: balance;
+}
+
+.cta-band .section-body {
+  color: var(--paper-muted);
 }
 
 .site-note {
@@ -960,8 +997,8 @@ main section[id] {
     margin-bottom: 1.8rem;
   }
 
-  .section-header h2 {
-    font-size: clamp(2.6rem, 13vw, 3.45rem);
+  .download-panel {
+    padding: 2rem 1.5rem;
   }
 
   .section-intro-copy,

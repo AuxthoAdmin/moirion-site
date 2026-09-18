@@ -1,22 +1,22 @@
 /
   Cache-Control: no-store, max-age=0
-  X-Moirion-Site-Release: 2026-09-18-responsive-title
+  X-Moirion-Site-Release: 2026-09-18-typography
 
 /index.html
   Cache-Control: no-store, max-age=0
-  X-Moirion-Site-Release: 2026-09-18-responsive-title
+  X-Moirion-Site-Release: 2026-09-18-typography
 
 /privacy.html
   Cache-Control: no-store, max-age=0
-  X-Moirion-Site-Release: 2026-09-18-responsive-title
+  X-Moirion-Site-Release: 2026-09-18-typography
 
 /terms.html
   Cache-Control: no-store, max-age=0
-  X-Moirion-Site-Release: 2026-09-18-responsive-title
+  X-Moirion-Site-Release: 2026-09-18-typography
 
 /404.html
   Cache-Control: no-store, max-age=0
-  X-Moirion-Site-Release: 2026-09-18-responsive-title
+  X-Moirion-Site-Release: 2026-09-18-typography
 
 https://moirion.pages.dev/*
   X-Robots-Tag: noindex
