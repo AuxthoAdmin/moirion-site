@@ -215,13 +215,22 @@ summary:focus-visible {
 }
 
 .hero h1 {
-  max-width: 900px;
+  max-width: 1060px;
   margin-top: 0.8rem;
   font-family: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   font-size: clamp(4rem, 8vw, 7rem);
   font-weight: 500;
   letter-spacing: -0.065em;
   line-height: 0.91;
+}
+
+.hero-title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-title-phrase {
+  white-space: nowrap;
 }
 
 .hero-lead {
@@ -900,8 +909,12 @@ main section[id] {
   }
 
   .hero h1 {
-    font-size: clamp(3.25rem, 16vw, 4.25rem);
+    font-size: clamp(2.6rem, 11.5vw, 4.25rem);
     line-height: 0.94;
+  }
+
+  .hero-title-line {
+    white-space: normal;
   }
 
   .hero-lead {
