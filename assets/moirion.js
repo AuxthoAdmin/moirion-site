@@ -4,17 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.site-nav');
 
   if (toggle && header && nav) {
+    nav.id = nav.id || 'site-navigation';
+    toggle.setAttribute('aria-controls', nav.id);
+
+    const setOpen = (open) => {
+      header.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+
     toggle.addEventListener('click', () => {
-      const next = !header.classList.contains('is-open');
-      header.classList.toggle('is-open', next);
-      toggle.setAttribute('aria-expanded', String(next));
+      setOpen(!header.classList.contains('is-open'));
     });
 
     nav.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        header.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        setOpen(false);
       });
+    });
+
+    header.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && header.classList.contains('is-open')) {
+        setOpen(false);
+        toggle.focus();
+        event.preventDefault();
+      }
     });
   }
 });
