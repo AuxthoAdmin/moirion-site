@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // A direct setup link should reveal its content, including after Back/Forward.
+  const revealCompatibility = () => {
+    if (window.location.hash !== '#compatibility') return;
+    const details = document.getElementById('compatibility');
+    if (details instanceof HTMLDetailsElement) details.open = true;
+  };
+  revealCompatibility();
+  window.addEventListener('hashchange', revealCompatibility);
+
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');

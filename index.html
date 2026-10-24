@@ -9,7 +9,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0d1012">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="moirion-site-release" content="2026-09-20-product-copy">
+  <meta name="moirion-site-release" content="2026-10-25-release-clarity">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
   <link rel="shortcut icon" href="./favicon.ico">
@@ -32,7 +32,7 @@
 
   <link rel="preload" href="./assets/fonts/newsreader-variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="./assets/tailwind.css">
-  <link rel="stylesheet" href="./assets/moirion.css?v=20260918-type">
+  <link rel="stylesheet" href="./assets/moirion.css?v=20261025-clarity">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,7 +52,7 @@
         <a href="#conversation">Talk with an entry</a>
         <a href="#local">Local</a>
         <a href="#status">Explore</a>
-        <a href="#download">Mac App Store</a>
+        <a href="#download">Release &amp; setup</a>
       </nav>
 
       <div class="nav-actions">
@@ -73,7 +73,7 @@
           <h1><span class="hero-title-line">Write a little.</span> <span class="hero-title-line"><span class="hero-title-phrase">Talk when</span> <span class="hero-title-phrase">you want.</span></span></h1>
           <p class="hero-lead">Keep the day in your own words. When you want another perspective, talk with the entry you chose.</p>
           <div class="hero-actions">
-            <a class="btn-primary" href="#download">Mac App Store</a>
+            <a class="btn-primary" href="#download">Release updates</a>
             <a class="btn-secondary" href="#journal">See the journal</a>
           </div>
           <p class="hero-note">Write and browse without an account. Your original entry stays close.</p>
@@ -219,7 +219,7 @@
           <article class="status-card">
             <span class="status-label">Conversation</span>
             <h3>Talk with an entry</h3>
-            <p>Ask about something you wrote. Keep the original close as the conversation unfolds in English or Korean.</p>
+            <p>Ask about something you wrote and keep the original close. English is the primary AI language; Korean and French AI conversations are Alpha.</p>
           </article>
           <article class="status-card">
             <span class="status-label">Local AI</span>
@@ -229,7 +229,7 @@
           <article class="status-card">
             <span class="status-label">Metdol preview</span>
             <h3>AI on your own PC</h3>
-            <p>Send a question from your Mac to a paired Windows PC running Gemma on your local network. Read the reply in Moirion, with the computer and model clearly shown.</p>
+            <p>In the development preview, send a question from your Mac to a paired Windows PC running Gemma on your local network. Read the reply in Moirion, with the computer and model clearly shown.</p>
           </article>
         </div>
       </div>
@@ -263,6 +263,10 @@
             <p>The model runs on your own computer. Moirion connects your questions with a compatible local model, so you can keep the conversation on your Mac.</p>
           </details>
           <details class="faq-item">
+            <summary>Which languages does Moirion support?</summary>
+            <p>The interface is available in English, Korean, and French. English is the primary AI language; Korean and French AI conversations are Alpha. Conversation quality also depends on the model you choose.</p>
+          </details>
+          <details class="faq-item">
             <summary>Can I use my own PC for AI?</summary>
             <p>The Metdol preview connects Moirion on Mac with a paired Windows PC on your local network. Choose Metdol for a question, confirm what you are sending, and receive the reply right in Moirion. Your Mac remains the default.</p>
           </details>
@@ -273,11 +277,34 @@
     <section id="download">
       <div class="container narrow">
         <div class="download-panel">
-          <p class="eyebrow">Mac App Store</p>
-          <h2><span class="title-line">Coming to the</span> <span class="title-line">Mac App Store.</span></h2>
-          <p>A quiet place to write, return to your day, and talk with what you kept. Moirion for Mac is coming to the Mac App Store.</p>
+          <p class="eyebrow">Release &amp; setup</p>
+          <h2>Mac and iPhone.<br>A place for your words.</h2>
+          <p>App Store releases are in preparation. Find each platform’s release stage and setup below.</p>
+          <dl class="platform-releases" aria-label="Platform release status">
+            <div>
+              <dt>Mac <span class="release-stage">Release in preparation</span></dt>
+              <dd>A local journal with conversations through a compatible model on your Mac.</dd>
+            </div>
+            <div>
+              <dt>iPhone <span class="release-stage">Release in preparation</span></dt>
+              <dd>A personal journal with Apple’s on-device AI on compatible iPhones.</dd>
+            </div>
+            <div>
+              <dt>Computer connections <span class="release-stage">Development preview</span></dt>
+              <dd>Paired Mac and Windows AI connections are being tested separately from the first App Store releases. <a class="text-link" href="https://auxtho.com/products/moirion/#verification">See development demonstrations</a>.</dd>
+            </div>
+          </dl>
+          <details class="compatibility-details" id="compatibility">
+            <summary>Device and AI setup</summary>
+            <div class="compatibility-body">
+              <p><strong>Mac builds:</strong> Apple silicon and macOS 14 or later. Writing, browsing, and searching work independently of AI. For conversations, install Ollama and a compatible local text model on your Mac, then choose it in Moirion. Memory and storage needs depend on the selected model.</p>
+              <p><strong>iPhone builds:</strong> iOS 17 or later for the journal. Apple on-device AI requires iOS 26 or later, an Apple Intelligence-compatible iPhone, Apple Intelligence enabled, and the on-device model ready. Moirion shows model availability in the app.</p>
+              <p><strong>AI languages:</strong> English first. Korean and French AI conversations are Alpha.</p>
+              <p>These are the current build requirements. Final App Store listings will confirm release compatibility and availability.</p>
+            </div>
+          </details>
           <div class="download-actions">
-            <span class="platform-pill" aria-label="Mac App Store release coming soon">Mac App Store · Coming soon</span>
+            <a class="btn-primary" href="mailto:moirion@auxtho.com?subject=Moirion%20release">Ask about the release</a>
             <a class="btn-secondary" href="mailto:moirion@auxtho.com?subject=Moirion%20support">Contact support</a>
           </div>
           <p class="platform-meta">Get in touch: <a href="mailto:moirion@auxtho.com">moirion@auxtho.com</a></p>
@@ -299,7 +326,7 @@
         <a href="#conversation">Talk with an entry</a>
         <a href="#local">Local</a>
         <a href="#status">Explore</a>
-        <a href="#download">Mac App Store</a>
+        <a href="#download">Release &amp; setup</a>
       </div>
       <div class="footer-stack">
         <p class="footer-heading">Company</p>
@@ -322,6 +349,6 @@
     </div>
   </footer>
 
-  <script src="./assets/moirion.js?v=20260920-menu" defer></script>
+  <script src="./assets/moirion.js?v=20261025-clarity" defer></script>
 </body>
 </html>

@@ -736,9 +736,79 @@ figcaption,
 
 .platform-meta {
   margin-top: 1.2rem;
-  color: #7b7166;
+  color: var(--paper-muted);
   font-size: 0.76rem;
   line-height: 1.6;
+}
+
+/* Keep release information together; reveal technical setup on request. */
+.platform-releases {
+  margin: 1.7rem 0 0;
+  border-top: 1px solid rgba(27, 24, 20, 0.2);
+}
+
+.platform-releases > div {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(27, 24, 20, 0.16);
+}
+
+.platform-releases dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.release-stage {
+  color: var(--paper-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.platform-releases dd {
+  margin: 0.45rem 0 0;
+  color: var(--paper-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.compatibility-details {
+  margin-top: 1.35rem;
+  border-bottom: 1px solid rgba(27, 24, 20, 0.2);
+  scroll-margin-top: 6rem;
+}
+
+.compatibility-details summary {
+  padding: 0.7rem 0 1rem;
+  cursor: pointer;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.compatibility-body {
+  padding-bottom: 0.4rem;
+  color: var(--paper-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.compatibility-body p {
+  margin-bottom: 0.95rem;
+}
+
+.text-link,
+.platform-meta a,
+.legal-card a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.download-panel a:focus-visible,
+.download-panel summary:focus-visible {
+  outline-color: var(--paper-text);
 }
 
 .site-footer {

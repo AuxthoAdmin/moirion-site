@@ -14,7 +14,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="https://moirion.com/privacy.html">
   <link rel="stylesheet" href="/assets/tailwind.css">
-  <link rel="stylesheet" href="/assets/moirion.css?v=20260918-type">
+  <link rel="stylesheet" href="/assets/moirion.css?v=20261025-clarity">
 </head>
 <body>
   <header class="site-header">
@@ -29,7 +29,7 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="/#journal">Write</a>
         <a href="/#local">Local</a>
-        <a href="/#download">Release</a>
+        <a href="/#download">Release &amp; setup</a>
       </nav>
       <div class="nav-actions">
         <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
@@ -50,6 +50,10 @@
       </div>
 
       <section class="legal-card">
+        <h3>First free App Store releases</h3>
+        <p>The Mac and iPhone releases described here are in preparation. <a href="/#download">Platform release status and setup</a> distinguish those releases from connected development previews.</p>
+      </section>
+      <section class="legal-card">
         <h3>Free iPhone app</h3>
         <p>Moirion does not require an account and Auxtho does not collect your journal entries, conversations, contact details, or usage data through the free iPhone app. Entries and conversations are created when you write or talk in the app and are kept on your iPhone. They are used to show your journal, let you find past entries, and answer a question you choose to ask about them.</p>
       </section>
@@ -59,19 +63,30 @@
       </section>
       <section class="legal-card">
         <h3>Storage and deletion</h3>
-        <p>Your iPhone entries and conversations remain on the device until you delete them in Moirion, reset the app's data, or remove the app. Moirion does not retain a server copy of this data. iOS device backups, if you have enabled them, are controlled by your Apple settings and may have separate retention and deletion rules. You can stop using the AI feature at any time by not starting a conversation; writing and reading remain available.</p>
+        <p>Your iPhone entries and conversations remain on the device until you delete them in Moirion, reset the app's data, or remove the app. Moirion does not retain a server copy of this data. Moirion's protected records, drawings, and conversations are excluded from iOS device backups, and their encryption keys stay on this iPhone. Restoring an iPhone backup or moving to another iPhone does not restore these records. You can stop using the AI feature at any time by not starting a conversation; writing and reading remain available.</p>
       </section>
       <section class="legal-card">
         <h3>Mac and optional connections</h3>
         <p>The Mac app starts with local records and local-only AI. Writing, reading, and searching remain available without an AI model. Auxtho does not receive a server copy of your Mac journal through these local features.</p>
         <p>The first free Mac App Store release uses local models running on your Mac. Questions and journal excerpts are not sent to Google Gemini or another external AI service. Auxtho does not collect your journal entries, conversations, or app usage data through this release.</p>
-        <p>Device connections shown in development previews are separate from the free iPhone release. Before an enabled preview sends a question to your chosen computer, Moirion shows the destination and asks you to confirm.</p>
+        <p>Saved Mac entries and conversations are not encrypted by Moirion. Drafts use keys held in this Mac's Keychain, and portable backups are encrypted separately. macOS account permissions and FileVault, when enabled, protect local files. Pairing keys stay on their device and are excluded from backups and exports; restoring records does not grant model or transfer permissions.</p>
+      </section>
+      <section class="legal-card">
+        <h3>Connected development versions</h3>
+        <p>These features apply only to development versions that enable them; they are separate from the first free App Store releases. Before a question goes to a paired computer, Moirion shows the destination and asks you to confirm. Ordinary iPhone questions do not include journal entries, photos, or earlier conversation turns. In the Mac Metdol preview, recent conversation turns are included only when you select them; journal entries and drawings are not attached.</p>
+        <p>Opening a selected Mac entry on a paired iPhone requires separate approval and does not automatically save it to the iPhone journal. Questions about it use that original on the Mac, with earlier exchanges included only when selected.</p>
+        <p>If you enable automatic keeping on both devices, new iPhone entries and drawings are copied to the paired Mac while both apps are on screen and unlocked on the same local network. Earlier entries and conversations are excluded. Later edits or deletions on the iPhone do not change copies already kept on the Mac. You can manage those separate copies on the Mac; they are not an iPhone device backup.</p>
+      </section>
+      <section class="legal-card">
+        <h3>Recovery files in development versions</h3>
+        <p>When portable recovery is enabled in an iPhone development version, you can explicitly save a passphrase-encrypted recovery file containing written entries, dates, drawings, and confirmed corrections to a location you choose in Files. Restoring it creates a separate collection and preserves known local deletions. Drafts, conversations, backgrounds, attachments, imported documents, device keys, and connection permissions are excluded. Keep the file and its passphrase separately; Moirion cannot recover a lost passphrase.</p>
+        <p>The Files location you choose may belong to iCloud or another storage provider. That provider handles the file under its own settings. Moirion does not automatically upload your journal to Auxtho.</p>
       </section>
       <section class="legal-card">
         <h3>Support</h3>
         <p>For product questions or data-related requests, contact <a href="mailto:moirion@auxtho.com">moirion@auxtho.com</a>.</p>
       </section>
-      <p class="site-note">Last updated: 2026-10-07</p>
+      <p class="site-note">Last updated: 2026-10-25</p>
     </div>
   </main>
 
@@ -84,7 +99,7 @@
       <div class="footer-stack">
         <p class="footer-heading">Product</p>
         <a href="/#journal">Journal · Talk with an entry</a>
-        <a href="/#download">Mac App Store</a>
+        <a href="/#download">Release &amp; setup</a>
       </div>
       <div class="footer-stack">
         <p class="footer-heading">Company</p>
@@ -94,6 +109,6 @@
     </div>
   </footer>
 
-  <script src="/assets/moirion.js?v=20260920-menu" defer></script>
+  <script src="/assets/moirion.js?v=20261025-clarity" defer></script>
 </body>
 </html>
